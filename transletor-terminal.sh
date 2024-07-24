@@ -15,6 +15,12 @@
 
 clear
 # Função para exibir o menu
+# Mensagem para o usuário
+if whatis trans; then
+    echo ""
+else
+    echo -e "\033[31;1mTem que instalar o translate-shell\033[m" && sleep 4s && exit 1
+fi    
 
 mostrar_menu() {
     echo "Menu:"
